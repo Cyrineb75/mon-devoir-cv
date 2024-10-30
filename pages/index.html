@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon devoir CV en ligne</title>
+
+     <!-- Fichier CSS principal -->
+     <link rel="stylesheet" href="../assets/css/style.css">
+
+     <!--La favicon importer via référence sur le sujet fournis-->
+    <link rel="shortcut icon" href="../assets/img/favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Header : Photo + Infos de contact -->
+    <header class="header">
+        <!--Ma photo de profil version draw-->
+        <figure class="header__figure">
+            <a href="../assets/img/photo-de-profil-moi-draw.JPG" target="_blank">
+                <img src="../assets/img/photo-de-profil-moi-draw.JPG" alt="Photo de profil Cyrine" class="header__img">
+            </a>  
+        </figure>
+        <!-- Titre de l'entête Nom prénom qualification-->
+        <section class="header__titles">
+            <h1 class="header__title">Cyrine BAOUCH</h1>
+            <h2 class="header__subtitle">Développeuse web junior</h2>
+        </section>
+        <!--Bas de l'entête liste infos contact avec lien interactives : maps, mail, phone !fausses cordonnées! -->
+        <address class="header__contact">
+            <ul class="header__contact-list">
+                <li class="header__contact-item">
+                    <a href="https://maps.app.goo.gl/oiP9YwDeTGgXvo9h8" class="header__contact-link">
+                        19 Rue Nicolas Appert, <br> 59650 Villeneuve-d'Ascq
+                    </a>
+                </li>
+                <li class="header__contact-item">
+                    <a href="mailto:cyrinebaouch@gmail.com" class="header__contact-link">cyrinebaouch@gmail.com</a>
+                </li>
+                <li class="header__contact-item">
+                    <a href="tel:+330606060606" class="header__contact-link">0606060606</a>
+                </li>
+            </ul>
+        </address>   
+    </header>
+    <!-- Fin Header -->
+
+<!-- Main contenu : Expérience, Formations, Compétences -->
+<main class="cv">
+
+    <!-- Aside à gauche (informations supplémentaires) -->
+    <aside class="cv__aside">
+        <section class="cv__about">
+            <h3 class="cv__title">À propos</h3>
+            <p class="cv__about-description">
+                Polyvalente avec expérience en gestion de projet et relation client.<br>
+                Expérience dans divers postes clés. Adaptabilité rapide.<br>
+                Enthousiaste, autonome, perfectionniste et prête pour de nouveaux défis.<br>
+            </p>
+        </section>
+
+        <!-- Section Langues parlées -->
+        <section class="cv__languages">
+            <h3 class="cv__title">Langues parlées</h3>
+            <ul class="cv__list-languages">
+                <li class="cv__language">Français - Langue maternelle</li>
+                <li class="cv__language">Anglais - Intermédiaire</li>
+                <li class="cv__language">Espagnol - Intermédiaire</li>
+                <li class="cv__language">Arabe - Intermédiaire</li>
+                <li class="cv__language">Allemand - Intermédiaire</li>
+                <li class="cv__language">Néerlandais - Débutant</li>
+            </ul>
+        </section>
+
+        <!-- Section Centres d'intérêt (Loisirs) -->
+        <section class="cv__hobbies">
+            <h3 class="cv__title">Centres d'intérêt</h3>
+            <ul class="cv__list-hobbies">
+                <li class="cv__hobby">Équitation</li>
+                <li class="cv__hobby">Yoga</li>
+                <li class="cv__hobby">Bien-être</li>
+                <li class="cv__hobby">Histoire</li>
+                <li class="cv__hobby">Littérature</li>
+                <li class="cv__hobby">Voyages</li>
+            </ul>
+        </section>
+    </aside>
+
+    <!-- Section principale à droite (Expériences, Formations, Compétences) -->
+    <section class="cv__section">
+        <h2 class="visually-hidden">Le corps du cv</h2>
+        <!-- Section Expérience -->
+        <article class="cv__experience">
+            <h3 class="cv__title">Expérience professionnelle</h3>
+
+            <!-- Job 1: RATP -->
+            <article class="cv__job">
+                <h4 class="cv__job-title">Traitement de données, RATP</h4>
+                <time class="cv__time" datetime="2023-09-01">Du 1er septembre 2023 au Présent</time>
+                <ul class="cv__list-missions">
+                    <li class="cv__mission">Traitement confidentiel de documents et d'informations.</li>
+                    <li class="cv__mission">Maîtrise des systèmes de classement et des bases de données.</li>
+                    <li class="cv__mission">Collaboration avec d'autres départements pour garantir l'exactitude des données.</li>
+                </ul>
+            </article>
+
+            <!-- Job 2: Keolis et Île-de-France Mobilités (IDFM) -->
+            <article class="cv__job">
+                <h4 class="cv__job-title">Gestionnaire de flux, Keolis et Île-de-France Mobilités (IDFM)</h4>
+                <time class="cv__time" datetime="2024-07-01">Du 1er juillet 2024 au 8 septembre 2024</time>
+                <ul class="cv__list-missions">
+                    <li class="cv__mission">Gestion des navettes accessibles PMR sur les sites des Jeux Olympiques et Paralympiques 2024.</li>
+                    <li class="cv__mission">Coordination avec les équipes de transport pour garantir la sécurité dans les Zones de Dépose et Reprise (ZDR).</li>
+                    <li class="cv__mission">Supervision de l'embarquement et du débarquement des passagers PMR, en veillant à la sécurité des athlètes et spectateurs handicapés.</li>
+                    <li class="cv__mission">Interaction en anglais et espagnol pour offrir une assistance adaptée aux passagers.</li>
+                    <li class="cv__mission">Collaboration avec Île-de-France Mobilités et Keolis pour ajuster les opérations selon les besoins spécifiques des Jeux.</li>
+                </ul>
+            </article>
+
+            <!-- Job 3: Choco -->
+            <article class="cv__job">
+                <h4 class="cv__job-title">Responsable de traitement multilingue et de contrôle de qualité, Choco</h4>
+                <time class="cv__time" datetime="2022-11-01">Du 1er novembre 2022 au 31 janvier 2023</time>
+                <ul class="cv__list-missions">
+                    <li class="cv__mission">Coordination du traitement des commandes dans différentes langues.</li>
+                    <li class="cv__mission">Intégration des commandes dans des tableurs Excel en tant que sauvegarde de l'application client.</li>
+                    <li class="cv__mission">Supervision du travail de l'IA et de l'équipe humaine pour garantir la qualité du travail.</li>
+                    <li class="cv__mission">Contrôle de la qualité pour assurer la précision et l'exactitude des données traitées.</li>
+                    <li class="cv__mission">Garantie de la satisfaction des clients et du respect des normes établies.</li>
+                </ul>
+            </article>
+        </article>
+        <!-- Fin Section Expérience -->
+
+        <!-- Section Diplômes et Formations -->
+        <article class="cv__formations">
+            <h3 class="cv__title">Diplômes et Formations</h3>
+
+            <article class="cv__formation">
+                <h4 class="cv__formation-title">Développeur Web, CEF</h4>
+                <time class="cv__time" datetime="2024-02-01">Du 1er février 2024 au Présent</time>
+            </article>
+
+            <article class="cv__formation">
+                <h4 class="cv__formation-title">Licence de Droit, Université de Lille</h4>
+                <time class="cv__time" datetime="2023-09-01">Du 1er septembre 2023 au Présent</time>
+            </article>
+        </article>
+        <!-- Fin Section Formations -->
+
+        <!-- Section Compétences -->
+        <article class="cv__skills">
+            <h3 class="cv__title">Compétences</h3>
+            <ul class="cv__list-skills">
+                <li class="cv__skill">HTML 5 - Débutant</li>
+                <li class="cv__skill">CSS 3 - Débutant</li>
+                <li class="cv__skill">GitHub - Débutant</li>
+                <li class="cv__skill">Outils de bureau - Expert</li>
+            </ul>
+        </article>
+        <!-- Fin Section Compétences -->
+    </section>
+    <!-- Fin Section principale -->
+</main>
+<!-- Fin Main contenu -->
+
+    <!-- Footer : Réseaux sociaux avec liens interactives et mise à jour -->
+    <footer class="footer">
+        <ul class="footer__social-networks">
+            <li class="footer__social-network-item">
+                <!--Icon Linkedin pas de compte perso-->
+                <a href="https://www.linkedin.com" target="_blank" class="footer__social-network-link">
+                    <img src="../assets/img/linkedin.png" alt="LinkedIn" class="footer__icon">
+                </a>
+            </li>
+            <!--twitter X je n'ai pas de compte perso -->
+            <li>
+                <a href="https://twitter.com" target="_blank" class="icon__social-network">
+                    <img src="../assets/img/twitter-logo.png" alt="Twitter" class="footer__icon">
+                </a>
+            </li>
+            <!--Git page perso-->
+            <li>
+                <a href="https://github.com/Cyrineb75" target="_blank" class="icon__social-network">
+                    <img src="../assets/img/github-sign.png" alt="GitHub" class="footer__icon">
+                </a>
+            </li>
+        </ul>
+        <p class="footer__copyright">
+            <small>Dernière mise à jour le 29/09/2024</small>
+        </p>
+    </footer>
+    <!-- Fin Footer -->
+
+
+</body>
+</html>
