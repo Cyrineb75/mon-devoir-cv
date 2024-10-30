@@ -22,6 +22,7 @@ Fonctionnalités :
 J'ai travaillé sur ce projet en utilisant GitHub pour gérer les versions, créer des branches,
 et suivre le workflow du développement. 
 Les fichiers HTML et CSS ont été validés pour s'assurer de la conformité aux normes du W3C.
+
 Comment tester le CV :
 Pour visualiser le CV, ouvrez simplement le fichier `index.html` dans votre navigateur.
 
