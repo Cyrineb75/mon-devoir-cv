@@ -1,0 +1,214 @@
+/* Importation des polices Lato et Raleway */
+
+/*Lato avec @import*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+/*Raleway en fichier Variable en @font-face*/
+
+/*style normal*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*style gras*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/*style italic*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/*Style générale*/
+
+/*Pour garder les marges internes et les bordures conforme à la consigne dans hauteur et largeur*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif; /*style écriture pour le contenu de la page*/
+    color: white;
+    margin: 0 auto;
+    max-width: 1160px;
+    font-size: 1rem; /* Taille de la police pour le contenu */
+    display: flex; /*positionement souhaité flexbox*/
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+/* Titre style*/
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif; /*style écriture pour les titres*/
+    font-weight: bold;
+}
+
+h3 {
+    background-color: #dbc2a4; /* Fond beige pour le titre */
+    padding: 10px;
+    color: black; /* Couleur du texte en noir */
+    margin-bottom: 20px; /* Pour ajouter un peu d'espace en dessous du titre */
+}
+
+/*Style liens*/
+a {
+    text-decoration: none; /* Pas de soulignement par défaut */
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline; /* Soulignement au survol (dynamisme demandé)*/
+}
+
+/* début de header */
+
+.header{
+    max-width: 1160px;
+    text-align: center;
+    background-color: #782221 ;
+    padding-top: 20px;
+}
+/*Photo de profil*/
+.header__img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+/*effet dynamique photo de profil*/
+.header__img:hover {
+    cursor: zoom-in; /* Change le curseur pour indiquer l'action de zoom */
+}
+
+/* Nom prénom, qualification*/
+.header__titles {
+    text-align: center;
+    margin: 20px;
+    padding: 0 20px 20px 20px;
+}
+/*Infos Contact , fond aubergine*/
+.header__contact {   
+    max-width: 1160px;
+    background-color: #2c1d27;
+    padding: 5px;
+    margin-top: 10px;
+}
+/*Infos contact liste puce invisible, en ligne et centré*/
+.header__contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* fin de header */
+
+
+/* début de Main*/
+/*corps du cv*/
+.cv{
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #782221 ;
+}
+
+/* Sections du CV */
+.cv__section {
+    background-color: white;
+    color: black;
+    width: 70%; /*Pour dispatcher taille cv.section de cv.aside : + grand partie*/
+    padding: 0 20px 0 20px; 
+    border-right: 2px solid black; /* Il y a une bordure à droite corps cv*/
+}
+.cv__section h3{
+    border-left: 10px solid #782221; /* Il y a une bande rouge à gauche visible sur le modèle de la maquette fournis*/
+}
+/*effect dynamique corps cv*/
+.cv__job:hover, .cv__formation:hover, .cv__skill:hover {
+    border-right: 6px solid #782221; /* Trait bordeaux à droite */
+    cursor: pointer; /* Je l'ai ajouté en facultatif pour indiquer que c'est interactif = clarté zone */
+}
+/*Titre H2 ajouté pour ne pas utiliser de div et pour être conforme au W3C validator = rendu caché*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
+    border: 0;
+  }
+  
+.cv__aside {
+    padding-right: 30px;
+    width: 30%; /*Pour dispatcher taille cv.section de cv.aside : + petite partie*/
+}
+/* Paragraphe indenté à propos */
+.cv__about-description {
+    text-indent: 2em;
+    padding: 0 0 20px 20px; 
+}
+
+/*fin de Main */
+
+/* Début de Footer */
+.footer {
+    max-width: 1160px;
+    text-align: center;
+    background-color: #782221 ;
+    padding: 5px;
+}
+/*icon centré et leger espacement entre elles*/
+.footer__social-networks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+/*Réglages icons*/
+.footer__icon {
+    width: 24px;
+    height: 24px;
+}
+/*effet footer*/
+.footer__icon:hover {
+    opacity: 0.5; /* Pour Réduire l'opacité au survol petite icone */
+}
+
+/* Fin de Footer*/
+
+/*Option navigation opté pour + responsive test autres support iphone, ipad, surface etc*/
+@media (max-width: 768px) {
+    .cv {
+        flex-direction: column; /* Empiler les éléments pour les small screen */
+        align-items: center; /* Centrer les sections verticalement */
+        width: 100%; /* Pour s’adapter à la largeur du mobile sans décalage des # parties*/
+    }
+    .cv__aside, .cv__section {
+        width: 90%; /* Ajuste la largeur pour qu'elle soit uniforme et garde de l'espace sur les côtés */
+        border-right: none; /* Enlèvement de la bordure droite qui déstabilise l'alignement */
+        border-bottom: 1px solid black; /* En remplacement facultatif de la bordure droite, ajoute une bordure en bas */
+        margin-bottom: 20px; /* Pour + d'espacement entre les sections */
+    }
+    .header__contact-list {
+        flex-direction: column; /* Pour mettre les contacts en colonne */
+        align-items: center; /* Centre chaque élément dans la colonne */
+        gap: 10px; /* Pour ajouter de l'espacement entre chaque contact */
+    }
+}
